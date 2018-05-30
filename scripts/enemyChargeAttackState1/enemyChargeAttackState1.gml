@@ -3,8 +3,6 @@ horizontal_speed = 0
 
 // counter to charge the attack up
 counter++
-show_debug_message("Charge counter: "+string(counter))
-
 if (counter >= room_speed) {
 	counter = 0
 	state = states.attack

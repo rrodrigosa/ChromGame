@@ -61,7 +61,22 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
-    "properties": null,
+    "properties": [
+        {
+            "id": "89f46071-a9fb-4114-9290-24612d17f12e",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "True",
+            "varName": "avoid_ledges",
+            "varType": 3
+        }
+    ],
     "solid": false,
     "spriteId": "4c849124-d46e-42e8-90f7-63e00ba72cb6",
     "visible": true

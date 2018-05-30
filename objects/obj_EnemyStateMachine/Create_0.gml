@@ -18,6 +18,7 @@ horizontal_speed = lengthdir_x(walk_speed, my_dir)
 vertical_speed = 0
 gravity_speed = 0.3
 enemy_xscale_flip = 1
+is_grounded = false
 is_grounded_after_attack = false
 
 range_to_follow = 200

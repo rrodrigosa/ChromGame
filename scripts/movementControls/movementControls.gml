@@ -1,3 +1,6 @@
+// -------------------- Gravity
+vertical_speed = vertical_speed + _gravity
+
 // blocks hinput while the player is attacking
 if (!sword_attacking && !bow_attacking) {
 	hinput = (keyboard_check(ord("D")) || keyboard_check(vk_right) || (gamepad_axis_value(global.pad_num, gp_axislh) > 0)) - (keyboard_check(ord("A")) || keyboard_check(vk_left) || (gamepad_axis_value(global.pad_num, gp_axislh) < 0))
@@ -5,18 +8,17 @@ if (!sword_attacking && !bow_attacking) {
 vinput = keyboard_check(ord("W")) || keyboard_check_pressed(vk_up) || gamepad_button_check_pressed(global.pad_num, gp_face1)
 
 // if the player attacks in the air and hits the ground, he won't slide anymore, hspeed set to 0
-if (is_grounded && (sword_attacking || bow_attacking)){
+if (is_grounded && (sword_attacking || bow_attacking)) {
 	hinput = 0
 }
 
 // -------------------- Jump
-if (is_grounded && vinput != 0) {
+can_jump -= 1
+if (can_jump > 0 && vinput != 0) {
 	vertical_speed = jump_height
 	is_grounded = false
+	can_jump = 0
 }
-
-// -------------------- Gravity
-vertical_speed = vertical_speed + _gravity
 
 // -------------------- Set the values to the player horizontal speed and facing direction
 if hinput != 0 {
@@ -51,7 +53,7 @@ if place_meeting(x, y+vertical_speed, obj_solid) {
 	if vertical_speed > 0 {
 		is_grounded = true
 	}
-	
+	can_jump = 10
 	vertical_speed = 0	
 }
 y += vertical_speed
