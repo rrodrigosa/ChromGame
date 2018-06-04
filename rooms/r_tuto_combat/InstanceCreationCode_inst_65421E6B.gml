@@ -1,3 +1,3 @@
-targetRoom = r_tuto_combat
-targetX = 420
-targetY = 130
+targetRoom = r_BOSS_teste
+targetX = 255
+targetY = 660

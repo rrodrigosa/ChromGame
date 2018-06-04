@@ -1,1 +1,0 @@
-ga_addProgressionEvent(GA_PROGRESSIONSTATUS_COMPLETE, "r_two", 2000)

@@ -13,11 +13,9 @@ if (is_grounded && (sword_attacking || bow_attacking)) {
 }
 
 // -------------------- Jump
-can_jump -= 1
-if (can_jump > 0 && vinput != 0) {
+if (is_grounded && vinput != 0) {
 	vertical_speed = jump_height
 	is_grounded = false
-	can_jump = 0
 }
 
 // -------------------- Set the values to the player horizontal speed and facing direction
@@ -53,7 +51,8 @@ if place_meeting(x, y+vertical_speed, obj_solid) {
 	if vertical_speed > 0 {
 		is_grounded = true
 	}
-	can_jump = 10
 	vertical_speed = 0	
+} else {
+	is_grounded = false
 }
 y += vertical_speed

@@ -1,14 +1,14 @@
 randomize()
 
-enum states {
-	idle,
-	wander,
-	follow,
-	charge_attack,
-	attack,
-	recharge_attack,
-	damaged
-}
+//enum states {
+//	idle,
+//	wander,
+//	follow,
+//	charge_attack,
+//	attack,
+//	recharge_attack,
+//	damaged
+//}
 state = states.idle
 counter = 0
 // sets a randon direction to the initial speed

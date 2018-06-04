@@ -15,8 +15,6 @@ _friction = 1
 // manage player
 is_grounded = false
 player_xscale_flip = 1
-// jump buffer
-can_jump = 0
 
 // -------------------- Sword
 // if the player is attacking
