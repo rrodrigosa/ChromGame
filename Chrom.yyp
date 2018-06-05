@@ -159,6 +159,14 @@
             }
         },
         {
+            "Key": "14bff752-966b-40d5-892b-85f1e62d74b7",
+            "Value": {
+                "id": "d5cd55c5-a4c1-437b-b6fc-8c0b1bd265d3",
+                "resourcePath": "rooms\\r_tuto_CARLOS_LVL_DESIGN1\\r_tuto_CARLOS_LVL_DESIGN1.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "16207f48-7890-45a2-96fd-ea91abc3e898",
             "Value": {
                 "id": "a4485369-12ea-4a2c-a910-bb06401043c7",
@@ -1127,14 +1135,6 @@
             }
         },
         {
-            "Key": "90ac7a3c-3538-470e-bf3b-435795c624ae",
-            "Value": {
-                "id": "1013d6ac-45eb-434d-840b-e74f2b4e6c1a",
-                "resourcePath": "views\\e779ae93-5b3c-4b21-bc45-e71899df8e7c-room.yy",
-                "resourceType": "GMFolder"
-            }
-        },
-        {
             "Key": "912b03eb-c8bb-45c2-a6d9-9852d6e16d8d",
             "Value": {
                 "id": "651dfd62-4860-4366-8e3e-b0364c21a2e7",
@@ -1324,6 +1324,14 @@
                 "id": "2f85f370-a831-435a-beeb-d1d2ff48fb0d",
                 "resourcePath": "scripts\\ga_setEnabledInfoLog\\ga_setEnabledInfoLog.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "ae3cb835-40c0-4c29-b2fd-b7c4425c4389",
+            "Value": {
+                "id": "d2f0079e-5ca2-44a2-9bfa-50c34727917f",
+                "resourcePath": "rooms\\r_tuto_CARLOS_LVL_DESIGN3\\r_tuto_CARLOS_LVL_DESIGN3.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -1796,6 +1804,14 @@
                 "id": "f2938af1-6f87-4370-85da-35c99759735a",
                 "resourcePath": "scripts\\ga_setEnabledManualSessionHandling\\ga_setEnabledManualSessionHandling.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "e99dfec9-7967-4dea-8345-38a9b9b703ab",
+            "Value": {
+                "id": "fb18226f-2ebc-451f-acbc-adec047cbdd6",
+                "resourcePath": "rooms\\r_tuto_CARLOS_LVL_DESIGN2\\r_tuto_CARLOS_LVL_DESIGN2.yy",
+                "resourceType": "GMRoom"
             }
         },
         {

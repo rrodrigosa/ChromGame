@@ -25,7 +25,7 @@ switch (state) {
 	#region Choose Attack
 	case boss_states.choose_attack:
 		var rand = choose(0, 1)
-		if (0) {
+		if (rand == 0) {
 			state = boss_states.charge_attack
 		} else {
 			state = boss_states.charge_attack2
@@ -81,7 +81,6 @@ switch (state) {
 		x += horizontal_speed
 		// setting the direction enemy is facing
 		if (horizontal_speed != 0) {
-			show_debug_message("xscale: "+string(enemy_xscale_flip))
 			enemy_xscale_flip = sign(horizontal_speed)
 		}
 		

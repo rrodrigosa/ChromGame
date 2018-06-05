@@ -1,6 +1,6 @@
 // New Attack - goes really fast in the player direction?
 // TODO
-
+show_debug_message("Atak1")
 // checks if the player still exists (didn't kill himself by colliding with the enemy in the 
 // attack animation)
 if (instance_exists(obj_player)) {
