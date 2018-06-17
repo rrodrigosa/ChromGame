@@ -12,8 +12,9 @@ if (is_grounded && (sword_attacking || bow_attacking)) {
 	hinput = 0
 }
 
+show_debug_message("State: "+string(state))
 // -------------------- Jump
-if (is_grounded && vinput != 0) {
+if (is_grounded && vinput != 0 && state != "rolling") {
 	vertical_speed = jump_height
 	is_grounded = false
 }

@@ -1,5 +1,5 @@
 // -------------------- Running animation
-if (horizontal_speed != 0 && !sword_attacking && !bow_attacking && !bow_charging && is_grounded) {
+if (horizontal_speed != 0 && !sword_attacking && !bow_attacking && !bow_charging && is_grounded && state!= "rolling") {
 	sword_attacking = false
 	image_speed = 1
 	image_xscale = player_xscale_flip
@@ -10,7 +10,7 @@ if (horizontal_speed != 0 && !sword_attacking && !bow_attacking && !bow_charging
 } 
 // -------------------- Idle animation
 else {
-	if (!sword_attacking && vertical_speed == 0 && !bow_attacking && !bow_charging) {
+	if (!sword_attacking && vertical_speed == 0 && !bow_attacking && !bow_charging && state!= "rolling") {
 		image_xscale = player_xscale_flip
 		if sprite_index != s_player_idle {
 			image_index = 0

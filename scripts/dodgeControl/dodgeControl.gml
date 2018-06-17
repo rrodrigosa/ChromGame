@@ -1,9 +1,8 @@
 // Dodge input
-var dodge_input = keyboard_check_pressed(ord("J"));
+var dodge_input = keyboard_check_pressed(ord("C")) || keyboard_check_pressed(ord("J")) ;
 
-if(dodge_input) {
+if(dodge_input && is_grounded && !sword_attacking && !bow_attacking && !bow_charging) {
 	state = "rolling"
-	alarm[0] = room_speed / 2
 }
 
 if (state == "rolling") {

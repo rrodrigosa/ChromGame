@@ -4,11 +4,11 @@ enum boss_states {
 	idle,
 	wander,
 	follow,
-	choose_attack, // teste
+	choose_attack,
 	charge_attack,
-	charge_attack2, // teste
+	charge_attack2,
 	attack,
-	attack2,	// sprint em direção ao jogador?
+	attack2,
 	recharge_attack, // resets the attacks cycle
 	damaged,
 	choose_path,
@@ -21,7 +21,6 @@ enum boss_states {
 }
 
 state = boss_states.idle
-//state = boss_states.choose_path
 counter = 0
 
 // sets a randon direction to the initial speed
@@ -37,7 +36,8 @@ range_to_follow = 200
 range_to_attack = 100
 
 // getting hit by the player
-health_points = 3
+max_health = 20
+current_health = max_health
 flash = 0
 hit_from = 0
 

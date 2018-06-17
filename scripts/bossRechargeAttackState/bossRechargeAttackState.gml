@@ -6,9 +6,9 @@ if (is_grounded_after_attack) {
 	// Idle Animation
 	image_speed = 1
 	image_xscale = enemy_xscale_flip
-	if sprite_index != s_boss_idle {
+	if sprite_index != s_boss_idle1 {
 		image_index = 0;
-		sprite_index = s_boss_idle
+		sprite_index = s_boss_idle1
 	}
 }
 		

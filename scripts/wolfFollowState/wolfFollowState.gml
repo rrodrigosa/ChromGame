@@ -1,5 +1,7 @@
 // Behavior (Follow)
-my_dir = point_direction(x, y, obj_player.x, obj_player.y)
+if(instance_exists(obj_player)) {
+	my_dir = point_direction(x, y, obj_player.x, obj_player.y)
+}
 horizontal_speed = lengthdir_x(walk_speed, my_dir)
 
 // -------------------- Horizontal collision
@@ -29,7 +31,7 @@ if (distance_to_object(obj_player) <= range_to_attack) {
 
 image_speed = 1
 image_xscale = enemy_xscale_flip
-if sprite_index != s_enemy_walking {
+if sprite_index != s_wolf_walking {
 	image_index = 0;
-	sprite_index = s_enemy_walking
+	sprite_index = s_wolf_walking
 }

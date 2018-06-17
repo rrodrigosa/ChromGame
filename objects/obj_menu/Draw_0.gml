@@ -25,7 +25,8 @@ for (var i = 0; i < array_length_1d(menu); i++){
             draw_set_colour(c_red);
             if mouse_check_button_pressed(mb_left) {
                 if i == 0 {
-                    room_goto(r_one);
+                    //room_goto(r_tuto_controls);
+                    room_goto(r_tuto_ANA);
                 } else if i == 1 {
                     room_goto(r_options);
                 } else if i == 2 {

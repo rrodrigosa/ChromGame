@@ -1,5 +1,7 @@
 // Behavior (Follow)
-my_dir = point_direction(x, y, obj_player.x, obj_player.y)
+if (instance_exists(obj_player)) {
+	my_dir = point_direction(x, y, obj_player.x, obj_player.y)
+}
 horizontal_speed = lengthdir_x(walk_speed, my_dir)
 
 // -------------------- Horizontal collision

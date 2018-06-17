@@ -11,6 +11,6 @@ switch (mpos) {
         break;
     
     case 1:
-        room_goto_previous();
+		room_goto(r_menu);
         break;
 }

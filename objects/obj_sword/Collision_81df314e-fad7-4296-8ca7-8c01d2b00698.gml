@@ -2,7 +2,7 @@
 screenShake(2, 10)
 
 with (other) {
-	health_points--
+	current_health--
 	flash = 3
 	// because the sword object direction is always 0, use the player_xscale (or change the sword direction 
 	// variable in the create event, so we can use it here, both ways work)

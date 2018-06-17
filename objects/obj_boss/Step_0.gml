@@ -24,7 +24,8 @@ switch (state) {
 	// ---------------------- Attacking
 	#region Choose Attack
 	case boss_states.choose_attack:
-		var rand = choose(0, 1)
+		//var rand = choose(0, 1)
+		var rand = 1
 		if (rand == 0) {
 			state = boss_states.charge_attack
 		} else {

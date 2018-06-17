@@ -13,8 +13,12 @@ _friction = 1
 // TODO - create a max gravity speed so the player doesn't go through solids (use clamp() on the vertical speed)
 
 // manage player
+max_health = 5
+current_health = max_health
 is_grounded = false
 player_xscale_flip = 1
+immune = false
+blinking_counter = room_speed / 4
 
 // -------------------- Sword
 // if the player is attacking

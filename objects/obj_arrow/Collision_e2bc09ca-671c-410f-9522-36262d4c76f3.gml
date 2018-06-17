@@ -1,5 +1,5 @@
 with (other) {
-	health_points--
+	current_health--
 	flash = 3
 	hit_from = other.direction
 }

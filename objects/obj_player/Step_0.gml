@@ -19,9 +19,8 @@ swordAnimation()
 bowAnimation()
 // Taking damage
 damageAnimation()
-
-// TODO - Dodge
-//dodgeAnimation()
+// Dodge
+dodgeAnimation()
 
 // -------------------- Transition
 // transitions the player to specified room with fade in/out

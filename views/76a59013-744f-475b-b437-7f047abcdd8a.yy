@@ -8,7 +8,8 @@
         "a13fc6bc-7543-4f03-b692-f1605d1f3fe3",
         "28adf433-cda4-4786-9364-264868c63ed0",
         "528fe8b6-c42e-4f18-874e-06a08fa3d94e",
-        "421007be-e15e-4b29-b567-5220953d05a3"
+        "421007be-e15e-4b29-b567-5220953d05a3",
+        "6c750689-cec5-4d26-abb5-8be3d623c113"
     ],
     "filterType": "GMObject",
     "folderName": "Boss",

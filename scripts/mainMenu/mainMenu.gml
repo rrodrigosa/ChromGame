@@ -1,7 +1,7 @@
 switch (mpos) {
     case 0:
-        //room_goto(r_one);
-        room_goto(r_teste_32_64);
+		//room_goto(r_tuto_controls)
+		room_goto(r_tuto_ANA)
         break;
     case 1:
         room_goto(r_options);

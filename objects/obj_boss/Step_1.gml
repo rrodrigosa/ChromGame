@@ -1,4 +1,4 @@
-if (health_points <= 0) {
+if (current_health <= 0) {
 	// screen shake
 	screenShake(6, 25)
 	with (instance_create_layer(x, y, layer, obj_boss_death)) {

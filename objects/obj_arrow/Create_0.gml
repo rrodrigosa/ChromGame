@@ -1,12 +1,10 @@
 // -------------------- Arrow default variables
-horizontal_speed = 0
-
 if (obj_player.player_xscale_flip) > 0 {
-    horizontal_speed = 5
+    horizontal_speed = 10
 	// set in angles,  0° being right, 90° being up, 180° being left and 270° being down.
 	direction = 0
 } else if (obj_player.player_xscale_flip) < 0 {
-    horizontal_speed = -5
+    horizontal_speed = -10
 	direction = 180
 }
 
