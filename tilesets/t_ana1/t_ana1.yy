@@ -9,7 +9,7 @@
             "modelName": "GMAutoTileSet",
             "mvc": "1.0",
             "closed_edge": false,
-            "name": "Ademar_tiltado",
+            "name": "autotile_pedra",
             "tiles": [
                 14,
                 37,
@@ -34,7 +34,7 @@
             "modelName": "GMAutoTileSet",
             "mvc": "1.0",
             "closed_edge": false,
-            "name": "autotile_grsms",
+            "name": "autotile_grama",
             "tiles": [
                 10,
                 41,

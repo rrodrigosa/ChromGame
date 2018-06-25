@@ -18,7 +18,7 @@ current_health = max_health
 is_grounded = false
 player_xscale_flip = 1
 immune = false
-blinking_counter = room_speed / 4
+blinking_counter = room_speed / 4 // taking damage shader variable
 
 // -------------------- Sword
 // if the player is attacking

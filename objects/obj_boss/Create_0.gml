@@ -36,7 +36,8 @@ range_to_follow = 200
 range_to_attack = 100
 
 // getting hit by the player
-max_health = 20
+//max_health = 20
+max_health = 1 // for EndRoom test
 current_health = max_health
 flash = 0
 hit_from = 0

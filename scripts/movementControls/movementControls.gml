@@ -2,7 +2,7 @@
 vertical_speed = vertical_speed + _gravity
 
 // blocks hinput while the player is attacking
-if (!sword_attacking && !bow_attacking) {
+if (!sword_attacking && !bow_attacking && state != "rolling") {
 	hinput = (keyboard_check(ord("D")) || keyboard_check(vk_right) || (gamepad_axis_value(global.pad_num, gp_axislh) > 0)) - (keyboard_check(ord("A")) || keyboard_check(vk_left) || (gamepad_axis_value(global.pad_num, gp_axislh) < 0))
 }
 vinput = keyboard_check(ord("W")) || keyboard_check_pressed(vk_up) || gamepad_button_check_pressed(global.pad_num, gp_face1)
@@ -12,7 +12,6 @@ if (is_grounded && (sword_attacking || bow_attacking)) {
 	hinput = 0
 }
 
-show_debug_message("State: "+string(state))
 // -------------------- Jump
 if (is_grounded && vinput != 0 && state != "rolling") {
 	vertical_speed = jump_height
