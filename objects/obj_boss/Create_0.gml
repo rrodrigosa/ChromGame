@@ -25,7 +25,7 @@ counter = 0
 
 // sets a randon direction to the initial speed
 my_dir = choose(0, 180)
-walk_speed = 2
+walk_speed = 4
 horizontal_speed = lengthdir_x(walk_speed, my_dir)
 vertical_speed = 0
 gravity_speed = 0.3

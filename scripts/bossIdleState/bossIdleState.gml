@@ -2,16 +2,7 @@
 counter++
 		
 //Transition Trigger
-if (counter >= room_speed * 2) {
-	//var change = choose(0, 1)
-	//switch(change){
-	//	case 0: 
-	//	state = boss_states.wander
-	//	my_dir = choose(0, 180)
-	//	horizontal_speed = lengthdir_x(walk_speed, my_dir)
-	//	case 1: counter = 0 break
-	//}
-	
+if (counter >= room_speed * 2) {	
 	counter = 0
 	var change = choose(0, 1, 2)
 	switch(change){

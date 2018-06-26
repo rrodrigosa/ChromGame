@@ -24,13 +24,6 @@ if (distance_to_object(obj_player) > range_to_follow) {
 	state = boss_states.idle
 }
 
-// original
-//if (distance_to_object(obj_player) <= range_to_attack) {
-//	state = boss_states.charge_attack
-//	counter = 0
-//}
-
-// teste multiplos ataques
 if (distance_to_object(obj_player) <= range_to_attack) {
 	state = boss_states.choose_attack
 	counter = 0

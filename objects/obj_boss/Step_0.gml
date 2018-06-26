@@ -25,8 +25,7 @@ if (global.can_move) {
 		// ---------------------- Attacking
 		#region Choose Attack
 		case boss_states.choose_attack:
-			//var rand = choose(0, 1)
-			var rand = 1
+			var rand = choose(0, 1)
 			if (rand == 0) {
 				state = boss_states.charge_attack
 			} else {
@@ -69,7 +68,6 @@ if (global.can_move) {
 		break
 		#endregion
 	
-		// New Attack - goes really fast in the player direction?
 		#region Attack2
 		case boss_states.attack2:
 			// -------------------- Custom Horizontal collision
@@ -86,8 +84,7 @@ if (global.can_move) {
 				enemy_xscale_flip = sign(horizontal_speed)
 			}
 		
-			// checks if the player still exists (didn't kill himself by colliding with the enemy in the 
-			// attack animation)
+			// checks if the player still exists (didn't kill himself by colliding with the enemy)
 			if (instance_exists(obj_player)) {
 				if (player_pos_once) {
 					my_dir = point_direction(x, y, obj_player.x, y) // ignores player y
@@ -113,7 +110,6 @@ if (global.can_move) {
 				}
 			}
 
-			// Animation - draw him trying to bite the player?
 			image_speed = 1
 			image_xscale = enemy_xscale_flip
 			if sprite_index != s_boss_walking {
@@ -121,7 +117,7 @@ if (global.can_move) {
 				sprite_index = s_boss_walking
 			}
 		
-			// Fazer a animação de fade atras do boss quando ele atacar
+			// Boss dash animation objects
 			bossDashAnimation()
 		break
 		#endregion
@@ -138,10 +134,7 @@ if (global.can_move) {
 		break
 		#endregion
 	
-	
 		// ---------------------- Climbing
-		// Algum state vai chamar o choose_path. O que seria legal? Algum contador, dar ou receber 3 ataques, 
-		// usar como fuga do boss?
 		#region Choose path
 		case boss_states.choose_path:
 			// deve escolher apenas aquele que pode chegar
@@ -173,11 +166,6 @@ if (global.can_move) {
 				enemy_xscale_flip = sign(horizontal_speed)
 			}
 		
-			// original. use the distance_to_object to something else
-			//if (distance_to_object(obj_path) <= walk_speed) {
-			//	state = boss_states.climb_platform
-			//}
-		
 			// checks if it's in the minimum distance to jump
 			if (abs(obj_path.x - x) <= walk_speed) {
 				// snaps the boss x to the object so it can jump from the correct position
@@ -187,7 +175,13 @@ if (global.can_move) {
 				vertical_speed = 0
 				state = boss_states.climb_platform
 			}
-		
+			
+			image_speed = 1
+			image_xscale = enemy_xscale_flip
+			if sprite_index != s_boss_walking {
+				image_index = 0;
+				sprite_index = s_boss_walking
+			}
 		break
 		#endregion
 	
@@ -237,6 +231,14 @@ if (global.can_move) {
 			else if (path == -5 && can_jump) {
 				state = boss_states.idle
 			}
+			
+			image_speed = 1
+			image_xscale = enemy_xscale_flip
+			if sprite_index != s_boss_jump {
+				image_index = 0;
+				sprite_index = s_boss_jump
+			}
+
 		break
 		#endregion
 	
