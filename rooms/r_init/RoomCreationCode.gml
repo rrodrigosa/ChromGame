@@ -21,6 +21,7 @@
 #endregion
 global.pad_num = 0
 global.last_activated_checkpoint = noone
+global.can_move = true
 
 // -------------------- Go to next room
 //window_set_fullscreen(true)

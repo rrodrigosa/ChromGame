@@ -1,12 +1,12 @@
-space_between_lines = 64
+space_between_lines = 50
 rw = room_width/2;
 rh = room_height/2;
 
-menu[0] = "Thank you for playing!";
-menu[1] = "Follow us on facebook =D";
+text_array[0] = "Thank you for playing our demo! =D";
+text_array[1] = "Follow us on social media @facebook, @twitter and @instagram!";
+text_array[2] = "Suport us on catarse (https://www.catarse.me/Chrom)";
 
-text_pos_width[0] = string_width(string_hash_to_newline(menu[0]));
-text_pos_height[0] = string_height(string_hash_to_newline(menu[0]));
-
-text_pos_width[1] = string_width(string_hash_to_newline(menu[1]));
-text_pos_height[1] = string_height(string_hash_to_newline(menu[1]));
+total_height = 0
+height1 = 0
+height2 = 0
+height3 = 0

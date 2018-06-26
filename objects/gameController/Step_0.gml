@@ -1,4 +1,11 @@
 /// @desc Respawn the player on the last activated checkpoint
+
+// everytime the room changes, resets last_activated_checkpoint, so the game doesn't crash in the last room
+if (old_room != room) {
+	old_room = room
+	global.last_activated_checkpoint = noone
+}
+
 // checks to see if a checkpoint instance exist so the game won't crash
 if (!instance_exists(obj_player) && global.last_activated_checkpoint != noone) {
 	#region // old code for nearest checkpoint

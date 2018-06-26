@@ -1111,6 +1111,14 @@
             }
         },
         {
+            "Key": "7e87fe68-77b8-4658-a928-40751dee9450",
+            "Value": {
+                "id": "e9927698-b82b-4229-b0c5-5083966acac7",
+                "resourcePath": "objects\\wolfBossInformation\\wolfBossInformation.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "7eacaec0-68dd-4a53-9b45-830f664c614a",
             "Value": {
                 "id": "9b123763-de3f-43a2-9946-8e8707ae2bf6",
@@ -1338,7 +1346,7 @@
             "Key": "95e108c8-1f3a-4b91-9116-80a9713e1ba8",
             "Value": {
                 "id": "78ce7b47-2dfb-4054-b39e-9f38ea25bc1e",
-                "resourcePath": "fonts\\fnt_FontEndRoom\\fnt_FontEndRoom.yy",
+                "resourcePath": "fonts\\fnt_Arial_36px\\fnt_Arial_36px.yy",
                 "resourceType": "GMFont"
             }
         },
@@ -2020,6 +2028,14 @@
                 "id": "4d667861-54d4-47b9-adc5-e7650bfb3f5f",
                 "resourcePath": "scripts\\mainMenuOptions\\mainMenuOptions.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "e09b0ce8-66ab-4ec6-b91c-6d1af2647b14",
+            "Value": {
+                "id": "5ec717cc-4a10-453b-9d92-444aed741617",
+                "resourcePath": "fonts\\fnt_Arial_24px\\fnt_Arial_24px.yy",
+                "resourceType": "GMFont"
             }
         },
         {

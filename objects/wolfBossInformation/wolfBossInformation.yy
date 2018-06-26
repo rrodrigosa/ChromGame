@@ -1,34 +1,34 @@
 {
-    "id": "9e419493-5f14-49a5-990a-c4ae8f092e6e",
+    "id": "7e87fe68-77b8-4658-a928-40751dee9450",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "gameController",
+    "name": "wolfBossInformation",
     "eventList": [
         {
-            "id": "36167b31-5510-48f7-b24b-482477cfdc29",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "9e419493-5f14-49a5-990a-c4ae8f092e6e"
-        },
-        {
-            "id": "9fe6a6c5-86c9-412a-80fa-7b9754ec3842",
+            "id": "21e537c3-3944-43de-b5cc-b3e2f56f8366",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "9e419493-5f14-49a5-990a-c4ae8f092e6e"
+            "m_owner": "7e87fe68-77b8-4658-a928-40751dee9450"
+        },
+        {
+            "id": "c741f06e-41ff-40ef-8e1e-8bc8db4bbfe5",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 64,
+            "eventtype": 8,
+            "m_owner": "7e87fe68-77b8-4658-a928-40751dee9450"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
     "parentObjectId": "00000000-0000-0000-0000-000000000000",
-    "persistent": true,
+    "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
     "physicsFriction": 0.2,

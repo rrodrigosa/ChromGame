@@ -1,11 +1,10 @@
 // Transitions between rooms
 if(doTransition){
-	// Handle black fase/room transition
 	if(room != spawnRoom){
-		blackAlpha += 0.1
+		blackAlpha += 0.05
 		if(blackAlpha >= 1) room_goto(spawnRoom)
 	} else {
-		blackAlpha -= 0.1
+		blackAlpha -= 0.05
 		if(blackAlpha <= 0) doTransition = false
 	}
 	
@@ -15,10 +14,8 @@ if(doTransition){
 	draw_set_alpha(1)
 }
 
-
 // Transition to "Thank you for playing" room
 if(global.doEndTransition == true) {
-	// Handle black fase/room transition
 	if(room != global.endRoom) {
 		blackAlpha += 0.003
 		if(blackAlpha >= 1) room_goto(global.endRoom)
@@ -32,6 +29,7 @@ if(global.doEndTransition == true) {
 		
 		if(blackAlpha <= 0) {
 			global.doEndTransition = false
+			alarm[0] = room_speed * 15
 		}
 	}
 	
