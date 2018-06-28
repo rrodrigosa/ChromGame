@@ -21,7 +21,7 @@ if (sword_combo_active) {
 
 // Allow the player to attack after a specific delay
 //if sword_input != 0 && sword_counter > sword_delay {
-if sword_input != 0 && sword_can_attack && state != "rolling" {
+if sword_input != 0 && sword_can_attack && !bow_attacking && !bow_charging && state != "rolling" {
     sword_attacking = true
 	// limits other animations so they dont overwrite the attack animation
     // sound effects here

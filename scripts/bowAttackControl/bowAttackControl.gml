@@ -2,12 +2,12 @@
 var shoot_input = keyboard_check(ord("Z")) || keyboard_check(ord("L")) || gamepad_button_check(global.pad_num, gp_face4);
 var shoot_input_released = keyboard_check_released(ord("Z")) || keyboard_check_released(ord("L")) || gamepad_button_check_released(global.pad_num, gp_face4);
 
-if (shoot_input != 0 && state != "rolling") {
+if (shoot_input != 0 && !sword_attacking && state != "rolling") {
 	bow_charging = true
 	bow_charge_counter++
 }
 
-if (shoot_input_released != 0 && state != "rolling") {
+if (shoot_input_released != 0 && !sword_attacking && state != "rolling") {
     if bow_charge_counter > bow_max_charge {
 		// charged attack
 		bow_normal_shot = false
@@ -18,6 +18,7 @@ if (shoot_input_released != 0 && state != "rolling") {
 		bow_normal_shot = true
 		bow_attacking = true
 	}
+	//reset the variables
 	bow_charging = false
     bow_charge_counter = 0
 }

@@ -8,8 +8,6 @@ if (bow_attacking && !sword_attacking) {
 		sprite_index = s_player_bow_attack
     }
 	
-	var numOfSubImages = sprite_get_number(s_player_bow_attack)
-	//if (image_index > numOfSubImages - 1) {
 	if (image_index > 2.6) {
 		bow_attacking = false
 	}
