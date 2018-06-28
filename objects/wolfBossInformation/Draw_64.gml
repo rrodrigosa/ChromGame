@@ -1,7 +1,8 @@
 draw_set_halign(fa_center);
 draw_set_valign(fa_top);
 
-if (alpha <= 2) {
+show_debug_message("Boss info: "+string(alpha))
+if (alpha <= 1.5) {
 	alpha += 0.005
 	for (var i = 0; i < array_length_1d(text_array); i++){
 		if (i == 0) {

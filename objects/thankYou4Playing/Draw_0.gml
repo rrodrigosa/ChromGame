@@ -19,8 +19,8 @@ for (var i = 0; i < array_length_1d(text_array); i++) {
 	draw_text(rw + 4, (rh + 4) + (i * space_between_lines) - total_height, text_array[i]);
     
 	// draw white text
-	draw_set_colour(c_white);
 	draw_set_alpha(1);
+	draw_set_colour(c_white);
 	draw_text(rw, rh + (i * space_between_lines) - total_height, text_array[i]);
 }
 
