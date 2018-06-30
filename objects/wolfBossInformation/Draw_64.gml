@@ -25,6 +25,12 @@ if (alpha <= 1.5) {
 } else {
 	// used on player and boss
     global.can_move = true; 
+	
+	// resets the camera back to the player
+	with(camera) {
+		follow = obj_player
+	}
+	
     //if !audio_is_playing(sn_sound) {
     //    audio_play_sound(sn_sound, 0, true);
     //}

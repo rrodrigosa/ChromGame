@@ -14,3 +14,8 @@ text_array[1] = "the dark spirit of the woods"
 total_height = 0
 height1 = 0
 height2 = 0
+
+// makes the camera follow the boss when the player enters the room
+with(camera) {
+	follow = obj_boss
+}

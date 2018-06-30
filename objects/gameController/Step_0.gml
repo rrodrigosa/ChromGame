@@ -1,5 +1,7 @@
 /// @desc Respawn the player on the last activated checkpoint
 
+//show_debug_message("Player Count: "+string(instance_number(obj_player)))
+
 // everytime the room changes, resets last_activated_checkpoint, so the game doesn't crash in the last room
 if (old_room != room) {
 	old_room = room

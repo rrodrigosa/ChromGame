@@ -10,6 +10,7 @@ menu[3] = "Exit";
 space = 64;
 mpos = 0;
 timer = 0;
+timer_bool = true;
 
 text_pos_width[0] = string_width(string_hash_to_newline(menu[0]));
 text_pos_width[1] = string_width(string_hash_to_newline(menu[1]));

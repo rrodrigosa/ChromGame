@@ -1,7 +1,6 @@
 // Dodge input
 
-// Adicionar gamepad!!!!!!
-var dodge_input = keyboard_check_pressed(ord("C")) || keyboard_check_pressed(ord("J"));
+var dodge_input = keyboard_check_pressed(ord("C")) || keyboard_check_pressed(ord("J")) || gamepad_button_check(global.pad_num, gp_face4);
 
 if(dodge_input && is_grounded && !sword_attacking && !bow_attacking && !bow_charging) {
 	state = "rolling"

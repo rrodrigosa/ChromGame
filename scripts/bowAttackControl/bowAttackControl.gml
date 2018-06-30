@@ -1,6 +1,6 @@
 // Bow input
-var shoot_input = keyboard_check(ord("Z")) || keyboard_check(ord("L")) || gamepad_button_check(global.pad_num, gp_face4);
-var shoot_input_released = keyboard_check_released(ord("Z")) || keyboard_check_released(ord("L")) || gamepad_button_check_released(global.pad_num, gp_face4);
+var shoot_input = keyboard_check(ord("Z")) || keyboard_check(ord("L")) || gamepad_button_check(global.pad_num, gp_shoulderr);
+var shoot_input_released = keyboard_check_released(ord("Z")) || keyboard_check_released(ord("L")) || gamepad_button_check_released(global.pad_num, gp_shoulderr);
 
 if (shoot_input != 0 && !sword_attacking && state != "rolling") {
 	bow_charging = true

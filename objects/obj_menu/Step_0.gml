@@ -5,14 +5,16 @@ timer++;
 var sobe = 0;
 var desce = 0;
 
-if timer > 5 {
-    if gamepad_axis_value(4, gp_axislv) > 0 {
-        desce = 1;
-    } else if gamepad_axis_value(4, gp_axislv) < 0 {
-        sobe = 1;
-    }
-    timer = 0;
-}
+//if timer > 5 {
+//    if gamepad_axis_value(4, gp_axislv) > 0 {
+//        desce = 1;
+//    } else if gamepad_axis_value(4, gp_axislv) < 0 {
+//        sobe = 1;
+//    }
+//    timer = 0;
+//}
+
+
 move -= max(keyboard_check_pressed(vk_up), keyboard_check_pressed(ord("W")), gamepad_button_check_pressed(0, gp_padu), gamepad_button_check_pressed(4, gp_padu), sobe, 0);
 move += max(keyboard_check_pressed(vk_down), keyboard_check_pressed(ord("S")), gamepad_button_check_pressed(0, gp_padd), gamepad_button_check_pressed(4, gp_padd), desce, 0);
 
@@ -24,6 +26,7 @@ if move != 0 {
     if mpos > array_length_1d(menu) - 1 {
         mpos = 0;
     }
+	timer_bool = true;
 }
 
 var push = 0;

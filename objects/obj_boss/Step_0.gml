@@ -144,6 +144,10 @@ if (global.can_move) {
 			// verifica se escolheu um path possível (na mesma altura/altura parecida)
 			if (abs(obj_path.y - y) <= 100) {
 				state = boss_states.move_to_path
+			} 
+			// caso esteja em alguma plataforma 
+			else {
+				state = boss_states.idle
 			}
 		break
 		#endregion
