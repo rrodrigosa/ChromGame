@@ -1,8 +1,4 @@
 // update destination
-
-show_debug_message("Follow: "+string(follow))
-
-
 if (instance_exists(follow)) {
 	xTo = follow.x
 	yTo = follow.y

@@ -1,7 +1,5 @@
 /// @desc Respawn the player on the last activated checkpoint
 
-//show_debug_message("Player Count: "+string(instance_number(obj_player)))
-
 // everytime the room changes, resets last_activated_checkpoint, so the game doesn't crash in the last room
 if (old_room != room) {
 	old_room = room
@@ -15,6 +13,6 @@ if (!instance_exists(obj_player) && global.last_activated_checkpoint != noone &&
 	//instance_create_layer(global.closest_checkpoint.x, global.closest_checkpoint.y, "Player", obj_player)
 	#endregion
 	
-	instance_create_layer(global.last_activated_checkpoint.x, global.last_activated_checkpoint.bbox_bottom - sprite_get_height(s_player_idle), "Player", obj_player)
+	instance_create_layer(global.last_activated_checkpoint.x, global.last_activated_checkpoint.bbox_bottom - (sprite_get_height(s_player_idle)/2), "Player", obj_player)
 	instance_create_layer(x, y, "Player", obj_player_health)
 }
