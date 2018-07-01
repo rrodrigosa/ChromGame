@@ -1,9 +1,13 @@
 // update destination
+
+show_debug_message("Follow: "+string(follow))
+
+
 if (instance_exists(follow)) {
 	xTo = follow.x
 	yTo = follow.y
 	
-	// checks if it should follow the obj_player_death instead obj_player
+	// checks if it should follow the obj_player_death on normal speed and not divided by 25
 	if (follow.object_index == obj_player_death) {
 		x = xTo
 		y = yTo

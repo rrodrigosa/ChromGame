@@ -11,4 +11,9 @@
 //}
 #endregion
 
+// destroy player health bar when killed
+instance_destroy(obj_player_health)
+
+global.deathTransition = true
+
 instance_destroy()

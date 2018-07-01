@@ -647,6 +647,14 @@
             }
         },
         {
+            "Key": "4b67b421-4b15-4242-b150-2da1c1ba6408",
+            "Value": {
+                "id": "61ae17c6-d5c3-45a1-a227-a7ca1d1d38b9",
+                "resourcePath": "objects\\checkpointParticle\\checkpointParticle.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "4ba33ad7-8c94-493a-8099-e34c1d15150f",
             "Value": {
                 "id": "56f95933-40da-4e5e-af09-f933df498b3f",
@@ -1556,6 +1564,14 @@
                 "id": "e1290de1-d1c2-44e2-9a06-4516b76f0157",
                 "resourcePath": "views\\ab075dc6-cf63-4505-8cff-8071c2c829db.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "ac012ff4-9dff-4910-94db-053a4ff2fb95",
+            "Value": {
+                "id": "92a94f42-d36b-4fc9-8f67-ce2fce895aa5",
+                "resourcePath": "objects\\deathFade\\deathFade.yy",
+                "resourceType": "GMObject"
             }
         },
         {

@@ -26,7 +26,7 @@ if sword_input != 0 && sword_can_attack && !bow_attacking && !bow_charging && st
 	// limits other animations so they dont overwrite the attack animation
     // sound effects here
 	sword_can_attack = false // resets after end of animation
-	with (instance_create_layer(x, y, "Instances", obj_sword)) {
+	with (instance_create_layer(x, y, "Player", obj_sword)) {
         image_xscale = other.player_xscale_flip
     }
 }

@@ -1,3 +1,6 @@
+// when it dies to an enemy, resets the camera follow variable
+camera.follow = id
+
 // -------------------- Movement
 hinput = 0
 vinput = 0
@@ -17,6 +20,9 @@ is_grounded = false
 player_xscale_flip = 1
 immune = false
 blinking_counter = room_speed / 4 // taking damage shader variable
+
+other_x = 0
+other_y = 0
 
 // -------------------- Sword
 // if the player is attacking

@@ -9,10 +9,12 @@ if (old_room != room) {
 }
 
 // checks to see if a checkpoint instance exist so the game won't crash
-if (!instance_exists(obj_player) && global.last_activated_checkpoint != noone) {
+if (!instance_exists(obj_player) && global.last_activated_checkpoint != noone && global.spawn) {
 	#region // old code for nearest checkpoint
 	//global.max_checkpoint_distance = 999999 // resets the max distance so the process can happen again
-	//instance_create_layer(global.closest_checkpoint.x, global.closest_checkpoint.y, "Instances", obj_player)
+	//instance_create_layer(global.closest_checkpoint.x, global.closest_checkpoint.y, "Player", obj_player)
 	#endregion
-	instance_create_layer(global.last_activated_checkpoint.x, global.last_activated_checkpoint.y, "Instances", obj_player)
+	
+	instance_create_layer(global.last_activated_checkpoint.x, global.last_activated_checkpoint.bbox_bottom - sprite_get_height(s_player_idle), "Player", obj_player)
+	instance_create_layer(x, y, "Player", obj_player_health)
 }

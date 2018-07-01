@@ -7,9 +7,12 @@ image_speed = 0
 image_index = 0
 
 //audio_play_sound(sndPlayerDeath, 10, false)
-game_set_speed(30, gamespeed_fps) //uncomment
+game_set_speed(30, gamespeed_fps)
 
 // tells the camera it should follow this object instead of the alive player
 with (camera) {
 	follow = other.id
 }
+
+// destroy player health bar when killed
+instance_destroy(obj_player_health)

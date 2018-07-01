@@ -2,7 +2,7 @@
 if (instance_exists(obj_player_health)) {
 	if (obj_player_health.current_health <= 0) {
 		instance_change(obj_player_death, true)
-		direction = point_direction(other.x, other.y, x, y)
+		direction = point_direction(other_x, other_y, x, y)
 		horizontal_speed  = lengthdir_x(6, direction)
 		vertical_speed = lengthdir_y(4, direction)-2
 

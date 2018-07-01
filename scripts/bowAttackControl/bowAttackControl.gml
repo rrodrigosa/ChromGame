@@ -28,7 +28,7 @@ if (!sword_attacking && state != "rolling") {
 	if shoot_input_released != 0 && bow_counter > bow_delay {
 	    //sound effects here
 	    bow_counter = 0;
-		with (instance_create_layer(x+5*player_xscale_flip, y, "Instances", obj_arrow)) {
+		with (instance_create_layer(x+5*player_xscale_flip, y, "Player", obj_arrow)) {
 	        image_xscale = other.player_xscale_flip
 		}
 	}
