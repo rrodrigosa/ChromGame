@@ -34,3 +34,12 @@ if (layer_exists("BackgroundMountains")) {
 if (layer_exists("BackgroundTrees")) {
 	layer_x("BackgroundTrees", x/4)
 }
+
+// parallax for backgrounds - forest/trees
+if (layer_exists("BackgroundForest1")) {
+	layer_x("BackgroundForest1", x/2)
+}
+
+if (layer_exists("BackgroundForest2")) {
+	layer_x("BackgroundForest2", x/4)
+}

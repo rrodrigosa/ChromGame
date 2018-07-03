@@ -10,7 +10,7 @@ if place_meeting(x, y+vertical_speed, obj_solid) {
 	}
 		
 	while !place_meeting(x, y+sign(vertical_speed), obj_solid) {
-	        y += sign(vertical_speed)
+		y += sign(vertical_speed)
 	}
 	vertical_speed = 0	
 }

@@ -26,7 +26,8 @@ for (var i = 0; i < array_length_1d(menu); i++){
             if mouse_check_button_pressed(mb_left) {
                 if i == 0 {
                     //room_goto(r_tuto_controls);
-                    room_goto(r_tuto_ANA);
+                    //room_goto(r_tuto_ANA);
+                    room_goto(r_level_design1);
                 } else if i == 1 {
                     room_goto(r_options);
                 } else if i == 2 {

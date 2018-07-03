@@ -34,25 +34,87 @@ if hinput != 0 {
 }
 
 // -------------------- Horizontal collision
-if place_meeting(x+horizontal_speed, y, obj_solid) {
-    while !place_meeting(x+sign(horizontal_speed), y, obj_solid) {
-        x += sign(horizontal_speed);
-    }
-    horizontal_speed = 0
+// original
+//if place_meeting(x+horizontal_speed, y, obj_solid) {
+//	show_debug_message("Horizontal")
+//    while !place_meeting(x+sign(horizontal_speed), y, obj_solid) {
+//        x += sign(horizontal_speed);
+//    }
+//    horizontal_speed = 0
+//}
+
+var inst = instance_place(x+horizontal_speed, y, obj_solid)
+if inst != noone {
+	if place_meeting(x+horizontal_speed, y, obj_solid) {
+		var inst_name = object_get_name(inst.object_index)
+		if (inst_name == "obj_solid") {
+			while !place_meeting(x+sign(horizontal_speed), y, obj_solid) {
+				x += sign(horizontal_speed);
+			}
+			horizontal_speed = 0
+		}
+	}
 }
 x += horizontal_speed
 
-// -------------------- Vertical collision/gravity
-if place_meeting(x, y+vertical_speed, obj_solid) {
-	while !place_meeting(x, y+sign(vertical_speed), obj_solid) {
-	        y += sign(vertical_speed)
+//// -------------------- Vertical collision/gravity
+// original
+//if place_meeting(x, y+vertical_speed, obj_solid) {
+//	while !place_meeting(x, y+sign(vertical_speed), obj_solid) {
+//	    y += sign(vertical_speed)
+//	}
+//	// checks the last value of vertical_speed to see if the player was falling
+//	if vertical_speed > 0 {
+//		is_grounded = true
+//	}
+//	vertical_speed = 0	
+//} else {
+//	is_grounded = false
+//}
+
+// round up so the collisions do not glitch
+if (vertical_speed == 0.3) {
+	vertical_speed = 1
+}
+
+var inst = instance_place(x, y+vertical_speed, obj_solid)
+if inst != noone {
+	if place_meeting(x, y+vertical_speed, obj_solid) {
+		var inst_name = object_get_name(inst.object_index)
+		
+		// ---------- Plataforma
+		if (inst_name == "obj_solid_plataform") {
+			// Se estiver subindo nao colide
+			if (vertical_speed < 0) {
+				// Do nothing
+			} else {
+				// só colide se o pe do personagem estiver em cima da origem da plataforma
+				var no_round_teste = y + (((bbox_bottom) - bbox_top)/2) // ou usar a origin de y em 59 nos sprites e usar apenas o y aqui (também funciona)
+				if (no_round_teste < inst.y) {
+					while !place_meeting(x, y+sign(vertical_speed), obj_solid) {
+						y += sign(vertical_speed)
+					}
+					// checks the last value of vertical_speed to see if the player was falling
+					if vertical_speed > 0 {
+						is_grounded = true
+					}
+					vertical_speed = 0
+				}
+			}
+		}
+		// ---------- Sólido normal
+		else {
+			while !place_meeting(x, y+sign(vertical_speed), obj_solid) {
+				y += sign(vertical_speed)
+			}
+			// checks the last value of vertical_speed to see if the player was falling
+			if vertical_speed > 0 {
+				is_grounded = true
+			}
+			vertical_speed = 0
+		}
+	} else {
+		is_grounded = false
 	}
-	// checks the last value of vertical_speed to see if the player was falling
-	if vertical_speed > 0 {
-		is_grounded = true
-	}
-	vertical_speed = 0	
-} else {
-	is_grounded = false
 }
 y += vertical_speed
