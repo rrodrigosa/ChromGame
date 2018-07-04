@@ -1,2 +1,2 @@
-///// @desc Resets the immune variable
+/// @desc Resets the immune variable
 immune = false

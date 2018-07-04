@@ -1367,6 +1367,14 @@
             }
         },
         {
+            "Key": "8d9b6ac9-cf37-4b05-8941-deccb5d45be3",
+            "Value": {
+                "id": "31b9030a-736a-41af-be96-02fb80567fda",
+                "resourcePath": "rooms\\r_level_design1_Pulo_BK\\r_level_design1_Pulo_BK.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "8e9b3b28-0822-4a51-9216-d0c6d4f41fe7",
             "Value": {
                 "id": "c9c6aabf-bf61-4d38-833b-da1f995883c6",

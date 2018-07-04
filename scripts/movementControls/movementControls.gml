@@ -113,8 +113,8 @@ if inst != noone {
 			}
 			vertical_speed = 0
 		}
-	} else {
-		is_grounded = false
 	}
+} else {
+	is_grounded = false
 }
 y += vertical_speed
