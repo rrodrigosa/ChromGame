@@ -359,6 +359,14 @@
             }
         },
         {
+            "Key": "289abfad-d421-4917-b4ad-154a3f4c5b10",
+            "Value": {
+                "id": "b8c1db89-d5f1-4222-91c4-70e7e0396afd",
+                "resourcePath": "rooms\\r_tuto_combat1\\r_tuto_combat1.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "28adf433-cda4-4786-9364-264868c63ed0",
             "Value": {
                 "id": "630da8aa-0ade-4255-8588-1ac83abf7472",
@@ -499,6 +507,14 @@
             "Value": {
                 "id": "8acaf2cf-825a-482c-a1a1-9d5b03b6f89f",
                 "resourcePath": "sprites\\s_enemy_walking\\s_enemy_walking.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "35492601-19b4-4c1c-92bb-08c5b4bfcb57",
+            "Value": {
+                "id": "a2aa77a1-4fb6-48b3-8a83-7ff8d22fac44",
+                "resourcePath": "sprites\\s_sword1\\s_sword1.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1911,14 +1927,6 @@
             }
         },
         {
-            "Key": "bd57509c-e92f-49bb-a12c-9c82dbdf7c6a",
-            "Value": {
-                "id": "3f945bb0-15c9-4ad5-a14c-e09eae1adb05",
-                "resourcePath": "rooms\\r_tuto_controls1\\r_tuto_controls1.yy",
-                "resourceType": "GMRoom"
-            }
-        },
-        {
             "Key": "bde93e4c-9162-4b73-a291-53063f7de329",
             "Value": {
                 "id": "ff98987e-f04f-4b91-9a41-1acc3c2cbe66",
@@ -2204,6 +2212,14 @@
                 "id": "c3aa3191-05d8-487b-bd91-0ef39b84ac54",
                 "resourcePath": "views\\da43ea48-f94f-44ef-99f5-366eea44e739.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "da4e39c6-9dd8-4e66-a00f-d3050b97b252",
+            "Value": {
+                "id": "c3e13da8-22e0-473a-bf40-44fbb204e990",
+                "resourcePath": "rooms\\r_tuto_controls1\\r_tuto_controls1.yy",
+                "resourceType": "GMRoom"
             }
         },
         {

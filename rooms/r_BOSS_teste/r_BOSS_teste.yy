@@ -16,7 +16,6 @@
         "82d5d496-e2f8-43cb-ba8d-754217830cd9",
         "5571be91-f8b6-4af2-89d8-d030e914a4ec",
         "29fe3db0-39fe-4f68-abff-e06caba5a4dc",
-        "4128e8a1-a534-4ca5-8979-2e34679d1e94",
         "0a2bf647-a94c-490a-b7b5-4fd40354019b",
         "39ee1125-5d19-4463-bc02-76e8200b793d",
         "aeab4ae3-5582-4b1e-82f4-7a8abf9399f1",
@@ -31,7 +30,8 @@
         "003b916d-2d5a-4acd-8444-cc8e1ccef662",
         "7d5d8250-0df3-4270-9847-315841b69411",
         "9d47623b-e588-4e75-90da-a8a1b4faeee0",
-        "c49477e4-ac00-4074-8ec4-3263df2cd841"
+        "c49477e4-ac00-4074-8ec4-3263df2cd841",
+        "4128e8a1-a534-4ca5-8979-2e34679d1e94"
     ],
     "IsDnD": false,
     "layers": [
@@ -43,7 +43,7 @@
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
-            "hierarchyVisible": true,
+            "hierarchyVisible": false,
             "inheritLayerDepth": false,
             "inheritLayerSettings": false,
             "inheritSubLayers": false,
@@ -63,7 +63,7 @@
             "modelName": "GMRInstanceLayer",
             "mvc": "1.0",
             "userdefined_depth": false,
-            "visible": true
+            "visible": false
         },
         {
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
@@ -153,7 +153,7 @@
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
-            "hierarchyVisible": true,
+            "hierarchyVisible": false,
             "inheritLayerDepth": false,
             "inheritLayerSettings": false,
             "inheritSubLayers": false,
@@ -169,7 +169,7 @@
             "modelName": "GMRInstanceLayer",
             "mvc": "1.0",
             "userdefined_depth": false,
-            "visible": true
+            "visible": false
         },
         {
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",

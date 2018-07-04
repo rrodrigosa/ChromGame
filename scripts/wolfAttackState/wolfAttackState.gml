@@ -2,7 +2,7 @@
 // attack animation)
 if (instance_exists(obj_player)) {
 	direction=point_direction(x, y, obj_player.x, obj_player.y)
-	horizontal_speed = lengthdir_x(5, direction)
+	horizontal_speed = lengthdir_x(7, direction)
 	vertical_speed = lengthdir_y(3, direction)-3
 	state = states.recharge_attack
 	is_grounded_after_attack = false

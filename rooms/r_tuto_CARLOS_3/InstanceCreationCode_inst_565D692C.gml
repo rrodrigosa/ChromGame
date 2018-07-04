@@ -1,3 +1,3 @@
-targetRoom = r_tuto_CARLOS_2
-targetX = 240
+targetRoom = r_tuto_ANA
+targetX = 95
 targetY = 1250

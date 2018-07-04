@@ -1,15 +1,11 @@
 switch (mpos) {
     case 0:
-		//room_goto(r_tuto_controls)
-		room_goto(r_tuto_ANA)
+		room_goto(r_level_design1_Pulo)
         break;
     case 1:
         room_goto(r_options);
         break;
     case 2:
-        //room_goto(r_credits);
-        break;
-    case 3:
         game_end();
         break;
 }
